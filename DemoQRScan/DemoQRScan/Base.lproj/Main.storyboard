@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6lw-Gs-QUq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+        <array key="GeorgiaBold.ttf">
+            <string>Georgia-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="r7S-AM-dfG">
+            <objects>
+                <viewController id="6lw-Gs-QUq" customClass="ViewController" customModule="DemoQRScan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Td-gC-yqU"/>
+                        <viewControllerLayoutGuide type="bottom" id="yGc-BT-nyA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ly-Hv-NbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGJ-Ae-d7T">
+                                <rect key="frame" x="20" y="40" width="335" height="301.5"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.062745098040000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jGJ-Ae-d7T" secondAttribute="height" multiplier="1:0.9" id="UgA-Aa-i4j"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P14-vs-dCg">
+                                <rect key="frame" x="187" y="410" width="1" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aB8-3L-G2T"/>
+                                    <constraint firstAttribute="width" constant="1" id="qS6-gv-NSf"/>
+                                </constraints>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl1-XG-QGO">
+                                <rect key="frame" x="20" y="374.5" width="335" height="43"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.062745098040000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="u8u-ds-uat"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="19"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopClick:" destination="6lw-Gs-QUq" eventType="touchUpInside" id="f2P-Pz-No5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="74C-xK-FGC">
+                                <rect key="frame" x="20" y="447.5" width="335" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6Vk-6k-owi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.062745098040000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fl1-XG-QGO" firstAttribute="trailing" secondItem="jGJ-Ae-d7T" secondAttribute="trailing" id="6Ws-nJ-Rmd"/>
+                            <constraint firstItem="74C-xK-FGC" firstAttribute="top" secondItem="Fl1-XG-QGO" secondAttribute="bottom" constant="30" id="D2E-VV-Th7"/>
+                            <constraint firstItem="74C-xK-FGC" firstAttribute="trailing" secondItem="Fl1-XG-QGO" secondAttribute="trailing" id="Hkz-Ly-evg"/>
+                            <constraint firstItem="Fl1-XG-QGO" firstAttribute="leading" secondItem="jGJ-Ae-d7T" secondAttribute="leading" id="LBm-OZ-bXD"/>
+                            <constraint firstItem="jGJ-Ae-d7T" firstAttribute="top" secondItem="8Td-gC-yqU" secondAttribute="bottom" constant="20" id="PxL-5z-idq"/>
+                            <constraint firstItem="P14-vs-dCg" firstAttribute="top" secondItem="3ly-Hv-NbS" secondAttribute="top" constant="410" id="S5a-nw-A9x"/>
+                            <constraint firstItem="74C-xK-FGC" firstAttribute="leading" secondItem="Fl1-XG-QGO" secondAttribute="leading" id="WTh-Xc-DEz"/>
+                            <constraint firstItem="P14-vs-dCg" firstAttribute="centerX" secondItem="3ly-Hv-NbS" secondAttribute="centerX" id="awi-yj-Zzu"/>
+                            <constraint firstItem="jGJ-Ae-d7T" firstAttribute="leading" secondItem="3ly-Hv-NbS" secondAttribute="leading" constant="20" id="fyr-dt-9Xf"/>
+                            <constraint firstItem="Fl1-XG-QGO" firstAttribute="top" secondItem="jGJ-Ae-d7T" secondAttribute="bottom" constant="33" id="sXQ-wM-TJi"/>
+                            <constraint firstAttribute="trailing" secondItem="jGJ-Ae-d7T" secondAttribute="trailing" constant="20" id="tVK-y9-2tH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnStartStop" destination="Fl1-XG-QGO" id="KZe-r1-cSX"/>
+                        <outlet property="lblString" destination="74C-xK-FGC" id="8Fl-q5-Epq"/>
+                        <outlet property="viewPreview" destination="jGJ-Ae-d7T" id="3Cc-lu-4bX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iix-3G-ekH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93.599999999999994" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+</document>
